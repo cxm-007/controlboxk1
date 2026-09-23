@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据转换盒子 · 多协议工业数据转换网关 | Modbus / Profinet / EtherNet/IP</title>
+<meta name="description" content="数据转换盒子是一款多协议工业数据转换网关：USB 双模、RS485 光电隔离、RS232、IO 与以太网互通，支持 Modbus RTU/TCP（主/从）、Profinet 从站、EtherNet/IP 从站、TCP/UDP，35mm DIN 导轨安装，Putty 菜单式配置，无需编程。">
+<meta name="keywords" content="多协议网关,Modbus转Profinet,EtherNet/IP,USB转Modbus,RS485转以太网,工业协议转换器,扫码枪数据采集">
+<meta property="og:title" content="数据转换盒子 · 一台盒子，打通所有工业协议">
+<meta property="og:description" content="Modbus / Profinet / EtherNet/IP / TCP/UDP 全协议转换网关，独有 USB 双模接口，内置数据编辑，RS485 光电隔离。">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.ico">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ======= 导航 ======= -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-dot"></span>
+      <span class="brand-name">数据转换盒子</span>
+      <span class="brand-sub">工业多协议网关</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#features">产品特性</a>
+      <a href="#protocols">协议矩阵</a>
+      <a href="#scenarios">应用场景</a>
+      <a href="#specs">规格参数</a>
+      <a href="#download">资料下载</a>
+      <a href="#faq">常见问题</a>
+      <a href="#contact" class="nav-cta">联系我们</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="打开菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ======= 首屏 ======= -->
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-text reveal">
+      <p class="hero-tag">多协议工业数据转换网关</p>
+      <h1>一台盒子，<br>打通<span class="grad">所有工业协议</span></h1>
+      <p class="hero-desc">
+        USB · 以太网 · RS485 · RS232 · IO 五类接口任意互通，
+        支持 <strong>Modbus RTU/TCP（主/从）</strong>、<strong>Profinet 从站</strong>、<strong>EtherNet/IP 从站</strong> 与 TCP/UDP 透传。
+        Putty 菜单式配置，无需编程，5 分钟上手。
+      </p>
+      <div class="chips">
+        <span>Modbus RTU</span><span>Modbus TCP</span><span>Profinet</span>
+        <span>EtherNet/IP</span><span>TCP/IP</span><span>UDP</span><span>USB HID / CDC</span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#scenarios">查看应用场景</a>
+        <a class="btn btn-ghost" href="#download">下载技术资料</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>6</b><span>物理接口</span></div>
+        <div class="stat"><b>7+</b><span>工业协议</span></div>
+        <div class="stat"><b>5<i>min</i></b><span>配置上手</span></div>
+        <div class="stat"><b>1<i>年</i></b><span>整机质保</span></div>
+      </div>
+    </div>
+    <div class="hero-img reveal">
+      <figure class="img-card">
+        <img src="assets/img/hero-product.jpg" alt="数据转换盒子 产品实物图：USB、以太网接口" loading="eager">
+        <figcaption>USB Host ×2 / Device · RJ45 以太网</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 痛点 ======= -->
+<section class="section" id="pain">
+  <div class="container">
+    <h2 class="sec-title reveal">现场是不是正被这些问题困扰？</h2>
+    <p class="sec-sub reveal">每种协议转换都要单独买一台设备？成本高、配电柜塞不下、调试改程序改到头疼——</p>
+    <div class="grid grid-4">
+      <div class="card pain-card reveal">
+        <div class="pain-icon">⇄</div>
+        <h3>协议语言不通</h3>
+        <p>扫码枪走 USB，上位系统走 Modbus；Siemens PLC 用 Profinet，车间老设备只认 Modbus RTU。</p>
+      </div>
+      <div class="card pain-card reveal">
+        <div class="pain-icon">⌗</div>
+        <h3>设备无法联网</h3>
+        <p>RS485 / RS232 串口设备的数据需要上报 MES / ERP / 云平台，缺少简单可靠的联网方案。</p>
+      </div>
+      <div class="card pain-card reveal">
+        <div class="pain-icon">¥</div>
+        <h3>改造成本高</h3>
+        <p>进口网关动辄 ¥3,000 起；每种协议各买一台转换器，成本和柜内空间双重压力。</p>
+      </div>
+      <div class="card pain-card reveal">
+        <div class="pain-icon">⚙</div>
+        <h3>调试门槛高</h3>
+        <p>数据格式不匹配，改 PLC 程序、写上位机脚本，现场调试费时费力。</p>
+      </div>
+    </div>
+    <p class="pain-answer reveal"><strong>数据转换盒子，一台搞定所有协议互通。</strong></p>
+  </div>
+</section>
+
+<!-- ======= 接口总览 ======= -->
+<section class="section section-alt" id="interfaces">
+  <div class="container">
+    <h2 class="sec-title reveal">六大接口，任意组合互通</h2>
+    <p class="sec-sub reveal">覆盖工业现场最常见的连接需求，支持自定义物理接口间的数据流向</p>
+    <div class="grid grid-3">
+      <div class="card feat-card reveal">
+        <div class="feat-icon">USB</div>
+        <h3>USB 主机 / 从机双模</h3>
+        <p>主机模式直读 USB 扫码枪、HID 键盘等设备；从机模式作为虚拟串口（CDC）连接 PC，同价位罕见的配置。</p>
+      </div>
+      <div class="card feat-card reveal">
+        <div class="feat-icon">ETH</div>
+        <h3>以太网 RJ45</h3>
+        <p>10/100M 自适应，支持 TCP/IP Server/Client、UDP、Modbus TCP、Profinet 从站、EtherNet/IP 从站。</p>
+      </div>
+      <div class="card feat-card reveal">
+        <div class="feat-icon">485</div>
+        <h3>RS485（光电隔离）</h3>
+        <p>内置光电隔离电路，抵御工业现场电磁干扰与地电位差，支持 Modbus RTU 主/从模式。</p>
+      </div>
+      <div class="card feat-card reveal">
+        <div class="feat-icon">232</div>
+        <h3>RS232</h3>
+        <p>5V 逻辑电平（TX/RX），对接电子秤、仪器仪表等传统串口设备。</p>
+      </div>
+      <div class="card feat-card reveal">
+        <div class="feat-icon">I/O</div>
+        <h3>IO 接口（3.3V）</h3>
+        <p>3.3V 逻辑电平，可直连 MCU / 嵌入式控制器，方便二次开发与逻辑电平调试。</p>
+      </div>
+      <div class="card feat-card reveal">
+        <div class="feat-icon">CFG</div>
+        <h3>CONFIG / DEBUG</h3>
+        <p>Putty 终端菜单式配置，全中文界面，无需安装驱动或专用配置软件，会敲键盘就会配置。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 协议矩阵 ======= -->
+<section class="section" id="protocols">
+  <div class="container">
+    <h2 class="sec-title reveal">全协议覆盖，自由组合</h2>
+    <p class="sec-sub reveal">Modbus 完整支持主站与从站双向模式，既可当"桥梁"也可当"采集器"</p>
+    <div class="table-wrap reveal">
+      <table class="tbl">
+        <thead>
+          <tr><th>协议</th><th>角色</th><th>说明</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Modbus RTU</td><td><span class="tag tag-both">主站 / 从站</span></td><td>RS485 通信，可主动轮询采集，也可被动响应上位系统</td></tr>
+          <tr><td>Modbus TCP</td><td><span class="tag tag-both">主站 / 从站</span></td><td>以太网通信，主/从双向灵活切换</td></tr>
+          <tr><td>Profinet</td><td><span class="tag tag-slave">从站</span></td><td>兼容 GSD 文件，直连 Siemens 全系列 PLC（S7-300/1200/1500 等）</td></tr>
+          <tr><td>EtherNet/IP</td><td><span class="tag tag-slave">从站</span></td><td>兼容 EDS 文件，直连 Allen-Bradley / Rockwell PLC</td></tr>
+          <tr><td>TCP/IP</td><td><span class="tag tag-both">Server / Client</span></td><td>原始 Socket 双向数据透传</td></tr>
+          <tr><td>UDP</td><td><span class="tag tag-both">收发</span></td><td>原始 Socket 双向数据透传</td></tr>
+          <tr><td>USB Keyboard</td><td><span class="tag tag-both">主机 / 从机</span></td><td>读取 USB HID 键盘类设备（扫码枪等）数据</td></tr>
+          <tr><td>USB Serial Com</td><td><span class="tag tag-both">主机 / 从机</span></td><td>虚拟 CDC 串口，连接 PC / HMI</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="banner reveal">
+      <img src="assets/img/banner-protocols.jpg" alt="多协议一站通：UDP、Profinet、EtherNet/IP、TCP/IP、Modbus TCP/RTU、USB 协议列表" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ======= 核心亮点 ======= -->
+<section class="section section-alt" id="features">
+  <div class="container">
+    <h2 class="sec-title reveal">同价位找不到第二家的配置</h2>
+    <div class="grid grid-2">
+      <div class="card hl-card reveal">
+        <span class="hl-no">01</span>
+        <h3>USB 接口，同价位唯一</h3>
+        <p>市面上的协议网关清一色"串口 + 网口"。数据转换盒子独有 USB 主机/从机双模：主机模式直接读取 USB 扫码枪、HID 设备数据；从机模式作为虚拟串口连接 PC。一个 USB 口，解决"USB 设备接入工业系统"这个被多数竞品忽视的真实需求。</p>
+      </div>
+      <div class="card hl-card reveal">
+        <span class="hl-no">02</span>
+        <h3>Modbus 主/从双向，一台当两台用</h3>
+        <p>多数竞品的 Modbus 仅支持从站模式——只能被动等待读取。本产品 Modbus RTU 与 Modbus TCP 均同时支持主站和从站：从站模式接入 PLC 被轮询，主站模式主动轮询下位设备采集数据后转发。</p>
+      </div>
+      <div class="card hl-card reveal">
+        <span class="hl-no">03</span>
+        <h3>内置数据编辑，无需改 PLC 程序</h3>
+        <p>数据多了前缀？需要补回车换行？不用改 PLC 程序、不用写脚本——设备内置数据编辑功能：前缀/后缀添加、字符插入/删除、查找替换、字段提取输出，像用文本编辑器一样处理工业数据流。</p>
+      </div>
+      <div class="card hl-card reveal">
+        <span class="hl-no">04</span>
+        <h3>工业级可靠性设计</h3>
+        <p>RS485 内置光电隔离，抵御现场电磁干扰与地电位差；35mm 标准 U 型 DIN 导轨安装，直接入配电柜；Putty 中文菜单配置，5 分钟上手，现场维护零软件依赖。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 应用场景 ======= -->
+<section class="section" id="scenarios">
+  <div class="container">
+    <h2 class="sec-title reveal">典型应用场景</h2>
+    <p class="sec-sub reveal">接上就用，配置约 5 分钟</p>
+
+    <div class="scene reveal">
+      <div class="scene-img"><img src="assets/img/scene-usb.jpg" alt="USB扫码枪 → 数据转换盒子 → 以太网 → PLC 接线示意图" loading="lazy"></div>
+      <div class="scene-text">
+        <span class="scene-no">场景 01</span>
+        <h3>扫码枪数据接入工业系统</h3>
+        <p><b>需求：</b>仓库 / 产线的 USB 扫码枪需要将条码数据实时传送到 Modbus TCP 或 Profinet 上位系统。</p>
+        <p><b>接线：</b>USB 扫码枪 → 数据转换盒子（USB 口）→ 以太网 → 上位机 / PLC，5V 供电。</p>
+        <p><b>适合：</b>仓储物流追溯、产线扫码工站、超市后台库存管理。</p>
+      </div>
+    </div>
+
+    <div class="scene scene-flip reveal">
+      <div class="scene-img"><img src="assets/img/scene-rs485.jpg" alt="Modbus RTU设备 → 数据转换盒子 → 以太网 → PLC 接线示意图" loading="lazy"></div>
+      <div class="scene-text">
+        <span class="scene-no">场景 02</span>
+        <h3>老设备接入 Siemens PLC</h3>
+        <p><b>需求：</b>车间原有 Modbus RTU 设备需要接入 Siemens S7-1200/1500（Profinet 网络）。</p>
+        <p><b>接线：</b>Modbus RTU 设备 → 数据转换盒子（RS485 A/B，光电隔离）→ 以太网 → PLC。</p>
+        <p><b>配置：</b>导入随盒 GSD 文件，在 TIA Portal 中添加设备、配置 IO 映射即可。</p>
+      </div>
+    </div>
+
+    <div class="scene reveal">
+      <div class="scene-img"><img src="assets/img/scene-rs232.jpg" alt="RS232设备 → 数据转换盒子 → 以太网 → 服务器 接线示意图" loading="lazy"></div>
+      <div class="scene-text">
+        <span class="scene-no">场景 03</span>
+        <h3>串口设备联网上报</h3>
+        <p><b>需求：</b>RS232 / RS485 串口设备（电子秤、仪表等）的数据需要通过以太网上报 MES / SCADA / 云平台。</p>
+        <p><b>接线：</b>串口设备（TX/RX/GND）→ 数据转换盒子 → 以太网 → 服务器 / 云。</p>
+        <p><b>配置：</b>Putty 菜单设置目标 IP 与端口，选择 TCP/UDP 透传或 Modbus TCP，还可用数据编辑功能直接规范数据格式。</p>
+      </div>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card scene-mini reveal">
+        <span class="scene-no">场景 04</span>
+        <h3>老设备接入 AB / Rockwell PLC</h3>
+        <p>Modbus 或串口设备 → 数据转换盒子 → 以太网 → Allen-Bradley ControlLogix / CompactLogix。导入随盒 EDS 文件，Studio 5000 直接扫描添加。适合外企工厂、混品牌 PLC 环境。</p>
+      </div>
+      <div class="card scene-mini reveal">
+        <span class="scene-no">场景 05</span>
+        <h3>研发调试多协议通信</h3>
+        <p>PC（USB 虚拟串口）+ 被测设备（RS485/RS232）→ 数据转换盒子 → 以太网 → 模拟上位机。IO 接口直连 MCU 调试逻辑电平，一台设备承担多协议抓包、转发与注入。适合研发实验室与测试台架。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 快速上手 ======= -->
+<section class="section section-alt" id="quickstart">
+  <div class="container">
+    <h2 class="sec-title reveal">三步完成配置，无需编程</h2>
+    <div class="steps">
+      <div class="step reveal"><b>1</b><h4>连接</h4><p>用 USB 线将数据转换盒子的 CONFIG 口连接电脑</p></div>
+      <div class="step reveal"><b>2</b><h4>配置</h4><p>打开 Putty 进入中文菜单，选择输入/输出端口，设置协议参数</p></div>
+      <div class="step reveal"><b>3</b><h4>运行</h4><p>保存并重启，指示灯确认状态，数据即刻互通</p></div>
+    </div>
+    <div class="banner reveal">
+      <img src="assets/img/config-guide.jpg" alt="Putty 菜单式配置与固件更新示意图" loading="lazy">
+    </div>
+    <div class="accessory reveal">
+      <div class="accessory-img">
+        <img src="assets/img/accessory-dc.jpg" alt="DC 5.5*2.1 转 USB 供电线：输入 9~24V，输出 5V/2A" loading="lazy">
+      </div>
+      <div class="accessory-text">
+        <span class="scene-no">选配配件</span>
+        <h3>宽压供电线（DC 5.5×2.1 转 USB）</h3>
+        <p>现场只有 9~24V 直流电源？选配这条供电线即可直接取电：输入 9~24V，稳定输出 5V / 2A，60cm 线长，空载电流仅 1mA，无需额外配置 5V 电源。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 规格参数 ======= -->
+<section class="section" id="specs">
+  <div class="container">
+    <h2 class="sec-title reveal">规格参数</h2>
+    <div class="spec-grid">
+      <div class="table-wrap reveal">
+        <table class="tbl">
+          <tbody>
+            <tr><th>产品名称</th><td>数据转换盒子（工业多协议网关）</td></tr>
+            <tr><th>USB 接口</th><td>USB 2.0，主机/从机双模，支持 HID 键盘类设备与虚拟 CDC 串口</td></tr>
+            <tr><th>以太网接口</th><td>RJ45，10/100M 自适应</td></tr>
+            <tr><th>RS232 接口</th><td>5V 逻辑，TX / RX</td></tr>
+            <tr><th>RS485 接口</th><td>内置光电隔离，支持 Modbus RTU 主/从</td></tr>
+            <tr><th>IO 接口</th><td>3.3V 逻辑电平，可直连 MCU（默认断开，焊接 0Ω 电阻启用）</td></tr>
+            <tr><th>CONFIG 接口</th><td>5V，Putty 终端菜单配置</td></tr>
+            <tr><th>支持协议</th><td>Modbus RTU（主/从）、Modbus TCP（主/从）、Profinet（从站）、EtherNet/IP（从站）、TCP/IP Server/Client、UDP</td></tr>
+            <tr><th>配置方式</th><td>Putty 终端菜单配置，中文界面</td></tr>
+            <tr><th>数据编辑</th><td>前缀/后缀添加、字符插入/删除、查找替换、字段提取输出</td></tr>
+            <tr><th>指示灯</th><td>电源（红）、数据（绿）、状态（绿）、USB（绿）</td></tr>
+            <tr><th>安装方式</th><td>35mm 标准 U 型 DIN 导轨</td></tr>
+            <tr><th>外形尺寸</th><td>约 100 × 82 × 32 mm（含安装耳）</td></tr>
+            <tr><th>供电</th><td>DC 5V（可选 9~24V 输入转 5V 供电线）</td></tr>
+            <tr><th>工作温度</th><td>0℃ ~ +50℃</td></tr>
+            <tr><th>随附文件</th><td>GSD（Profinet）、EDS（EtherNet/IP）、快速使用指南、各协议使用说明</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="spec-side reveal">
+        <figure class="img-card">
+          <img src="assets/img/dimensions.jpg" alt="产品尺寸图：100 × 82 × 32 mm，35mm DIN 导轨安装" loading="lazy">
+          <figcaption>外形尺寸图（点击可放大）</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 竞品对比 ======= -->
+<section class="section section-alt" id="compare">
+  <div class="container">
+    <h2 class="sec-title reveal">同价位协议网关功能对比</h2>
+    <div class="table-wrap reveal">
+      <table class="tbl tbl-cmp">
+        <thead>
+          <tr><th>功能</th><th class="cmp-us">数据转换盒子</th><th>同价位竞品 A</th><th>同价位竞品 B</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Modbus RTU</td><td class="cmp-us">主站 + 从站</td><td>仅从站</td><td>仅从站</td></tr>
+          <tr><td>Modbus TCP</td><td class="cmp-us">主站 + 从站</td><td>仅从站</td><td>不支持</td></tr>
+          <tr><td>Profinet 从站</td><td class="cmp-us">✓</td><td>✓</td><td>✓</td></tr>
+          <tr><td>EtherNet/IP 从站</td><td class="cmp-us">✓</td><td>✗</td><td>✗</td></tr>
+          <tr><td>USB 接口</td><td class="cmp-us">主机 + 从机双模</td><td>无</td><td>无</td></tr>
+          <tr><td>内置数据编辑</td><td class="cmp-us">✓</td><td>✗</td><td>✗</td></tr>
+          <tr><td>RS485 隔离</td><td class="cmp-us">光电隔离</td><td>有</td><td>无</td></tr>
+          <tr><td>配置方式</td><td class="cmp-us">中文菜单</td><td>英文软件</td><td>英文软件</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="sec-note reveal">相同甚至更低的价格，多出 EtherNet/IP、USB 双模接口、数据编辑与 Modbus 主站模式。</p>
+  </div>
+</section>
+
+<!-- ======= 资料下载 ======= -->
+<section class="section" id="download">
+  <div class="container">
+    <h2 class="sec-title reveal">资料下载</h2>
+    <p class="sec-sub reveal">GSD / EDS 配置文件与全套产品文档，随盒同步提供</p>
+    <div class="grid grid-3">
+      <div class="card dl-card reveal">
+        <h3>PLC 集成配置文件</h3>
+        <ul>
+          <li><a href="downloads/GSDML-V2.3-p-net-cbox-app-20260114.xml" download>GSDML-V2.3-p-net-cbox-app-20260114.xml</a><span>Profinet（TIA Portal）</span></li>
+          <li><a href="downloads/GSDML-V2.4-p-net-cbox-app-20260107.xml" download>GSDML-V2.4-p-net-cbox-app-20260107.xml</a><span>Profinet（TIA Portal）</span></li>
+          <li><a href="downloads/EDS_cbox.eds" download>EDS_cbox.eds</a><span>EtherNet/IP（Studio 5000）</span></li>
+        </ul>
+      </div>
+      <div class="card dl-card reveal">
+        <h3>产品文档</h3>
+        <ul>
+          <li><a href="downloads/数据转换盒子规格书.pdf" download>数据转换盒子规格书.pdf</a><span>完整技术规格</span></li>
+          <li><a href="downloads/数据转换盒子快速使用指南v1.3.pdf" download>快速使用指南 v1.3.pdf</a><span>上手必读</span></li>
+          <li><a href="downloads/菜单使用说明.xlsx" download>菜单使用说明.xlsx</a><span>Putty 配置菜单详解</span></li>
+        </ul>
+      </div>
+      <div class="card dl-card reveal">
+        <h3>协议使用说明</h3>
+        <ul>
+          <li><a href="downloads/数据转换盒子Modbus协议使用说明.pdf" download>Modbus 协议使用说明.pdf</a><span>RTU / TCP 主从配置</span></li>
+          <li><a href="downloads/数据转换盒子EtherNetIP协议使用说明.pdf" download>EtherNet/IP 协议使用说明.pdf</a><span>AB PLC 集成</span></li>
+          <li><a href="downloads/数据转换盒子P-Net协议使用说明v1.1.pdf" download>P-Net(Profinet) 协议使用说明 v1.1.pdf</a><span>Siemens PLC 集成</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FAQ ======= -->
+<section class="section section-alt" id="faq">
+  <div class="container container-narrow">
+    <h2 class="sec-title reveal">常见问题</h2>
+    <div class="faq-list reveal">
+      <details class="faq">
+        <summary>支持同时连接多台设备吗？</summary>
+        <p>当前版本每个接口支持连接一台设备，例如 RS485 接口连接一台 Modbus RTU 从机、USB 接口连接一台扫码枪。如需多设备连接，欢迎联系我们了解后续版本计划。</p>
+      </details>
+      <details class="faq">
+        <summary>Profinet 和 EtherNet/IP 支持主站模式吗？</summary>
+        <p>当前版本 Profinet 与 EtherNet/IP 仅支持从站模式（作为被 PLC 主站扫描的从设备）。Modbus RTU 与 Modbus TCP 则同时支持主站与从站模式。</p>
+      </details>
+      <details class="faq">
+        <summary>配置复杂吗？需要编程吗？</summary>
+        <p>完全不需要编程。使用免费的 Putty 通过终端菜单配置，全程中文界面，选择端口和协议参数后保存即可，首次配置约 5–10 分钟。</p>
+      </details>
+      <details class="faq">
+        <summary>RS485 有隔离吗？</summary>
+        <p>有。RS485 接口内置光电隔离电路，可有效防止工业现场的电磁干扰和地电位差对设备造成损坏。</p>
+      </details>
+      <details class="faq">
+        <summary>支持哪些 PLC 品牌？</summary>
+        <p>Profinet 从站兼容 Siemens 全系列 PLC（S7-300 / S7-1200 / S7-1500 等）；EtherNet/IP 从站兼容 Allen-Bradley / Rockwell PLC；Modbus TCP/RTU 主从模式兼容几乎所有支持 Modbus 的品牌。</p>
+      </details>
+      <details class="faq">
+        <summary>如何安装？体积多大？</summary>
+        <p>支持 35mm 标准 U 型 DIN 导轨安装，可直接安装于配电柜，外形尺寸约 100 × 82 × 32 mm（含安装耳）。</p>
+      </details>
+      <details class="faq">
+        <summary>有技术支持吗？</summary>
+        <p>提供售前技术咨询与售后使用支持，技术问题请发邮件至 <a href="mailto:explore-E@foxmail.com">explore-E@foxmail.com</a>，我们会在 24 小时内回复。</p>
+      </details>
+      <details class="faq">
+        <summary>质保期多久？</summary>
+        <p>整机质保 1 年，非人为损坏免费维修或更换。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 联系 / 批量采购 ======= -->
+<section class="section cta-section" id="contact">
+  <div class="container cta-inner">
+    <div class="cta-text reveal">
+      <h2>批量采购与合作</h2>
+      <p>欢迎系统集成商、代理商与设备厂商洽谈合作，提供技术方案支持与项目定制服务。</p>
+      <div class="table-wrap">
+        <table class="tbl tbl-price">
+          <thead><tr><th>采购数量</th><th>单价</th></tr></thead>
+          <tbody>
+            <tr><td>1 台</td><td>¥699</td></tr>
+            <tr><td>2–4 台</td><td>¥659 / 台</td></tr>
+            <tr><td>5–9 台</td><td>¥629 / 台</td></tr>
+            <tr><td>10 台以上</td><td>¥599 / 台</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="cta-note">批量采购请直接邮件沟通价格与交期</p>
+      <a class="btn btn-primary btn-mail" href="mailto:explore-E@foxmail.com?subject=数据转换盒子%20采购咨询">邮件联系我们：explore-E@foxmail.com</a>
+    </div>
+    <div class="cta-img reveal">
+      <figure class="img-card img-card-dark">
+        <img src="assets/img/poster.jpg" alt="数据转换盒子宣传海报：多种接口与协议支持" loading="lazy">
+        <figcaption>多种接口 × 多种协议 · 一站通</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 页脚 ======= -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© 2026 数据转换盒子 · 工业多协议网关</p>
+    <p class="footer-links">
+      <a href="mailto:explore-E@foxmail.com">技术支持：explore-E@foxmail.com</a>
+      <span>|</span>
+      <a href="https://github.com/cxm-007/data-converter-box" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-close" id="lbClose" aria-label="关闭">×</button>
+  <img src="" alt="" id="lbImg">
+</div>
+
+<button class="back-top" id="backTop" aria-label="回到顶部">↑</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
