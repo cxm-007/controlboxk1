@@ -1,0 +1,15 @@
+# 极狐 GitLab Pages 部署配置
+# 原理：极狐 Pages 只认构建产物里的 public/ 目录，
+# 因此用一个 pages job 把仓库根目录的静态站点复制进去并作为 artifact 发布。
+pages:
+  stage: deploy
+  image: alpine:latest        # 轻量镜像，拉取快、构建快
+  script:
+    - mkdir -p public
+    # 把站点文件复制到 public/（index.html 在根，assets/ 图片样式，downloads/ 资料）
+    - cp -r index.html assets downloads public/
+  artifacts:
+    paths:
+      - public                # 必须叫 public，极狐才会托管
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH   # 仅默认分支触发
